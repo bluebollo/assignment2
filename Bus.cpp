@@ -26,6 +26,9 @@ void Bus::setNumberOfSeats(int number) {
 	numberOfSeats = number;
 }
 
+
+/* For mileageEstimate, there is a mileage penalty when numberOfSeats > 10 (10%)
+   and a bonus when fuel type == diesel */
 double Bus::mileageEstimate(double t) {
     
 	srand(time(NULL));

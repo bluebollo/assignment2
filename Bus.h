@@ -9,7 +9,7 @@
 class Bus : public PoweredVehicle {
 
 private:
-    int numberOfSeats;
+    int numberOfSeats;			//number of seats available for passengers
 
 public:
     Bus();
