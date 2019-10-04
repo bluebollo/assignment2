@@ -1,5 +1,5 @@
-vehicles: main.o Vehicle.o PoweredVehicle.o Bicycle.o Car.o Skateboard.o Jet.o
-	g++ -std=c++11 -o vehicles main.o Vehicle.o PoweredVehicle.o Bicycle.o Car.o Skateboard.o Jet.o
+vehicles: main.o Vehicle.o PoweredVehicle.o Bicycle.o Car.o Skateboard.o Jet.o Bus.o
+	g++ -std=c++11 -o vehicles main.o Vehicle.o PoweredVehicle.o Bicycle.o Car.o Skateboard.o Jet.o Bus.o
 main.o: main.cpp
 	g++ -std=c++11 -c main.cpp
 Vehicle.o: Vehicle.cpp Vehicle.h
@@ -14,6 +14,8 @@ Skateboard.o: Skateboard.cpp Skateboard.h
 	g++ -std=c++11 -c Skateboard.cpp
 Jet.o: Jet.cpp Jet.h
 	g++ -std=c++11 -c Jet.cpp
+Bus.o: Bus.cpp Bus.h
+	g++ -std=c++11 -c Bus.cpp
 
 clean:
 	rm *.o vehicles
