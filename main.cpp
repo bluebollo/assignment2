@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Car.h"
 #include "Bicycle.h"
+#include "Skateboard.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
+    int size = 8;
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
@@ -16,9 +17,10 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[6] = new Skateboard("Birdhouse", "THAWK99");
+    vehiclesArray[7] = new Skateboard("Baker", "PX1000");
 
     printVehiclesRoster(vehiclesArray, size);
-
     if (vehiclesArray != 0) { // If it is not a null pointer
         // do not use nullptr. It is not supported on linprog
         for (int i = 0; i < size; i++) {

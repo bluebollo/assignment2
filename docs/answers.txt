@@ -1,0 +1,34 @@
+a)
+	On branch master
+	Your branch is up to date with 'origin/master'.
+
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git restore <file>..." to discard changes in working directory)
+		modified:   docs/status.txt
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+
+b) There have been 9 total commits to the repository so far. There were initially 6 commits by Esteban and then 3 from myself after forking the repository. I used 'git shortlog' to find these commits.
+
+c) .gitignore was last modified "Wed Sep 25 18:13:30 2019". I used 'git log .gitignore' to find the information.
+
+d) Branches can be used to develop a new feature or they can be used to fix bugs in the existing code.
+
+e) 'git log' simply shoes the commit log for the repository. 'git status' shows what's about to be commited if the next command typed is 'git commit'.
+
+f) git log --follow Vehicle.h
+
+g) git log --grep=<file>
+
+h)
+	1) Inheritance refers to an object's ability to inherit functions and member data from a parent object. Some object oriented languages have multiple inheritance (C++) and some only have single inheritance (Objective C), and some have a mix of both 
+	(Java).
+
+	2) Polymorphism relates to inheritance in that it deals with the parent-child relationship of objects. Polymorphism allows child objects to pick and choose which of its own functions it wants to run over its parent's functions. This allows a child to inherit the functions that don't need modification and use them, saving the programmer time.
+
+	3) Encapsulation is the ability of an object to hide its member data through private interfaces using functions. In C++, a programmer can hide member data in a private scope and only allow access to the data through public member functions. This also makes object handling easier, as all the member functions that are required to make use of the member data are built into the object already.
+
+I) The main difference between the "Dictator and Lieutenants" and the "Integration Manager" workflows is in their conflict handling. The "Dictator and Lietenants" workflow merges changes in the Lietenants and the Dictator stages (and solves any arising conflicts). However, the "Integration Manager" workflow only solves conflicts in the Integration Manager stage.
+
+J) A centralized workflow will result in more conflicts for a team of 100 developers. They will constantly be pulling and pushing code while their coworkers are simulataneously doing the same thing - to the same repository. However, in the "Lieutenants and Dictator" workflow, developers push their code to the Lieutenant repository for conflict management, and then again to the Dictator repository. This allows the code to solve all conflicts before finally being pushed to the blessed repository.
